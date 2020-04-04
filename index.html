@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/adenike/image/upload/v1585835457/piggyvest/favicon_kfoa8v.ico">
+    <title>PiggyVest | Dashboard</title>
+    <style>
+        body{
+            padding: 0;
+            background-color: #062863;
+            align-content: center;
+            overflow-x: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin: auto;
+            height: 70%;
+        }
+        .header{
+            position: absolute;  
+            top: 40px;
+            cursor: pointer;
+        }
+        
+        form h1#account{
+            color: #083E9E;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        form .welcome{
+            text-align: center;
+        }
+        form p#future-saving{
+            color: #495057;
+            margin-top: 4px;
+            padding-bottom: 22px;
+            font-size: 14px;
+            font-family: 'Karla', sans-serif;
+        }
+        .container .reg-form{
+            border: 1px solid #fff;
+            background-color: #fff;
+            border-radius: 20px 20px 20px 0px;
+            position: relative;
+            top: 55px;
+            width: 370px;
+            height: auto;
+            margin: 70px auto;
+            padding: 25px 38px;
+            padding-bottom: 40px;
+        }
+
+        .container form label{
+            color:rgb(88, 84, 84);
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .container form input{
+            outline: none;
+            border-radius: 5px;
+            caret-color: #212529;
+        }
+        .container form input, select{
+            display: block;
+            margin-top: 8px;
+            margin-bottom: 30px;
+            color: black;
+            width: 100%;
+            padding: 18px;
+            font-size: 16px;
+            background-color: #EDF2F7;
+            box-sizing: border-box;
+            border: 1px solid #EDF2F7;
+        }
+        form select{
+            border-radius: 8px;
+        }
+        form select:hover{
+            box-shadow: 0px 0px 0px 1px #2684ff;
+        }
+        a#login{
+            display: block;
+            text-align: center;
+            color: #fff;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            font-size: 12px;
+            text-decoration: none;
+            font-family: 'Karla', sans-serif;
+            cursor: pointer;
+        }
+        a#login:hover{
+            color: #A8A293;
+        }
+        .container form button{
+            display: block;
+            margin: 10px auto;
+            padding: 18px;
+            width: 100%;
+            border: 1px solid #083E9E;
+            border-radius: 12px 12px 12px 0;
+            color: #fff;
+            background-color: #083E9E;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .container form button:hover{
+            background-color: #062B6F;
+        }
+
+        /*images/shapes used on the background*/
+        .top-img{
+            position: fixed; 
+            top: 0;
+            width: 100%;
+        }
+        .bottom-img{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /*circle-shaped image to top-left*/
+        .bg-img1{
+            position: relative;
+            display: table;
+            margin-left: -18px;
+            top: -72px;
+            width: auto;
+            max-width: 15%;
+            height: auto;   
+        }
+
+        /*green-colored image to top-right*/
+        .bg-img2{
+            position: absolute;
+            width: auto;
+            max-width: 15%;
+            height: auto;
+            right: -95px;
+            top: 1px;
+        }
+
+        /*pink-colored image to bottom-left*/
+        .bg-img3{
+            position: absolute;
+            display: table;
+            width: auto;
+            max-width: 16%;
+            margin-left: -75px;
+            bottom: -50px;
+        } 
+        
+        /*purple-colored image to bottom-right*/
+        .bg-img4{
+            position: absolute;
+            display: table;
+            width: auto;
+            max-width: 15%;
+            right: -12px;
+            margin-right: -53px;
+            bottom: -23px;   
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!--Piggyvest logo-->
+        <a class ="header" href="https://www.piggvest.com">
+            <img class="" src="https://res.cloudinary.com/adenike/image/upload/v1585835566/piggyvest/piggy-logo_ic4mqh.svg" alt="piggy-logo">
+        </a>
+
+        <!--Form starts here-->
+        <div class="reg-form">
+            <form method="" action="action_page.php">
+                <div class="welcome">
+                    <h1 id="account">Create a Secure Account</h1>
+                    <p id="future-saving">Welcome to the future of Savings & Investments</p>
+                </div>
+
+                <div class="form-input">
+                    <label for="fname">Full Name</label>
+                    <input id="fname" type="text" name="fname" placeholder="Full Name" required/>
+
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="email" placeholder="Email Address" required/>
+
+                    <label>Phone Number</label>
+                    <input id="num" type="tel" name="p-number" placeholder="Phone Number" />
+
+                    <label for="passwrd">Password</label>
+                    <input id="passwrd" type="password" name="password" placeholder="Password" required/>
+
+                    <label for="code">Referral Phone or Promo Code (Optional)</label>
+                    <input id="code" type="text" name="referrer" placeholder="Referrer Phone or Code" />
+
+                    <label>How Did You Hear About Us? (Optional)</label>
+                    
+                    <!--drop-down select-->
+                    <select>
+                        <option value="Click To Select">Click To Select</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Friend/Family/Co-worker Referral">Friend/Family/Co-worker Referral</option>
+                    </select>
+                </div>
+                <button type="submit">CREATE ACCOUNT</button>
+            </form>
+        </div>
+    </div>
+    
+    <a id="login" href="#">Already have an account? Log In</a>
+    
+    <!--Backround images-->
+    <div class="background-image">
+        <div class="top-img">
+            <img class="bg-img1" src="https://res.cloudinary.com/adenike/image/upload/v1585835457/piggyvest/data1_shu4la.png">
+            <img class="bg-img2" src = "https://res.cloudinary.com/adenike/image/upload/v1585835457/piggyvest/data2_lyo9gz.png">
+        </div>   
+
+        <div class="bottom-img">
+            <img class="bg-img3" src ="https://res.cloudinary.com/adenike/image/upload/v1585835457/piggyvest/data3_g1tdgi.png">
+            <img class="bg-img4" src ="https://res.cloudinary.com/adenike/image/upload/v1585835457/piggyvest/data4_ctcatd.png">
+        </div>
+    </div>
+</body>
+</html>
